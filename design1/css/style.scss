@@ -1,0 +1,86 @@
+body{
+    background: #ECECEC;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    background: linear-gradient(30deg, #0C9BC8, #0a5f8f);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;;
+    height: 78vh;
+    width: 60%;
+    margin-top: 5rem;
+    box-shadow: 0.9px 0.5px 10px rgb(126, 123, 123);
+    color: #ECECEC;
+
+    @media (min-width:640px) {
+        padding: 0% 5%;
+    }
+
+    h1 {
+        letter-spacing: 0.5rem;
+        font-weight: bold;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .form-group{
+        font-size: 13.5px;
+
+        label #right-text {
+            text-align: right;
+        }
+    }
+}
+
+.input-layer{
+    border:none;
+    padding: 0.5rem;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: 0.5rem;
+    color: #a8a2a2;
+}
+
+input[type=email]:focus{
+    outline: none;
+    transition: 0.1s ease-in;
+    border-bottom: 2px solid yellow;
+    color: #0C9BC8;
+}
+input[type=password]:focus{
+    outline: none;
+    transition: 0.1s ease-in;
+    border-bottom: 2px solid yellow;
+    color: #0C9BC8;
+}
+
+
+// 
+
+.btn-signin {
+    background-color: #0A5F8F;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 0.5rem;
+    color: #ECECEC;
+
+    &:hover{
+        background-color: #0982a6;
+        box-shadow: 0.5px 0.5px 8px whitesmoke;
+    }
+}
+
+.footer {
+    h6 {
+        font-size: 12px;
+    }
+
+    .create-account {
+        text-decoration: none;
+        color: #ECECEC;
+    }
+    justify-content: center;
+}

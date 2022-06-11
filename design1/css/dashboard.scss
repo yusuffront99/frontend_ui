@@ -1,0 +1,36 @@
+:root {
+    --main-color: #0C9BC8;
+    --second-color: #0a5f8f;
+    --whitedoff-color: #CECECE;
+    --white-color: #FFFFFF;
+    --yellow-color: yellow;
+
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: var(--white-color);
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-left {
+    background: var(--main-color);
+    height: 100vh;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+
+    .list-navbar ul li {
+        list-style: none;
+        text-align: left;
+    }
+
+    .list-navbar a {
+        text-decoration: none;
+    }
+
+}
+
+// sidebar stylecss
