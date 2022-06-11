@@ -4,6 +4,9 @@
   --whitedoff-color: #CECECE;
   --white-color: #FFFFFF;
   --yellow-color: yellow;
+  --green-light: #64F272;
+  --green-semi: #1FDD32;
+  --green-dark: #11B521;
 }
 
 body {
@@ -58,8 +61,16 @@ h6.text-center.text-menu {
   margin-bottom: 1.25rem;
 }
 
-.navbar-left .list-menu a.text-white {
+.navbar-left a.text-white {
   text-decoration: none;
+}
+
+.navbar-left a.text-white:hover {
+  background-color: var(--green-light);
+  padding: 0.85rem 0.85rem;
+  border-radius: 10px 0px 10px 0px;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 section.bottom-square-logout {

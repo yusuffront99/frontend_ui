@@ -4,6 +4,9 @@
     --whitedoff-color: #CECECE;
     --white-color: #FFFFFF;
     --yellow-color: yellow;
+    --green-light: #64F272;
+    --green-semi: #1FDD32;
+    --green-dark: #11B521;
 
 }
 
@@ -55,9 +58,16 @@ h6.text-center.text-menu {
             margin-top: 1.25rem;
             margin-bottom: 1.25rem;
         }
+    }
 
-        a.text-white {
-            text-decoration: none;
+    a.text-white {
+        text-decoration: none;
+
+        &:hover {
+            background-color: var(--green-light);
+            padding: 0.85rem 0.85rem;
+            border-radius: 10px 0px 10px 0px;
+            transition: 0.25s ease-in-out;
         }
     }
 }
