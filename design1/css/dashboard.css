@@ -10,88 +10,52 @@
 }
 
 body {
+  font-family: 'Inter', sans-serif;
+  margin: 0%;
+  padding: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background: var(--white-color);
-  font-family: 'Inter', sans-serif;
 }
 
-.container-dashboard {
-  width: 65%;
+.container-main {
+  background-color: var(--white-color);
 }
 
-.text-brand {
-  color: var(--white-color);
-  font-weight: bold;
-  font-size: 50px;
-  margin: 10px 10px;
-  line-height: 6.5rem;
+.container-main .navbar-position {
+  width: 25%;
 }
 
-h6.text-center.text-menu {
-  color: white;
-  font-weight: 500;
+.container-main .navbar-position .navbar-left {
+  margin: 5px;
+  background-color: var(--main-color);
+  height: 127vh;
 }
 
-.line-menu {
-  height: 1.5px;
-  width: 80%;
-  background: white;
-  margin: auto;
-  margin-top: 0.5rem;
-  margin-bottom: 2.0rem;
+.container-main .sidebar-position {
+  width: calc(100% - 25%);
 }
 
-.navbar-left {
-  background: var(--main-color);
-  height: 150vh;
-  margin: 15px 15px;
-  border-radius: 15px;
+.container-main .sidebar-position .sidebar-right {
+  margin: 5px;
+  background-color: var(--white-color);
+  height: 100vh;
 }
 
-.navbar-left .list-menu {
-  list-style: none;
-  padding: 0%;
-}
-
-.navbar-left .list-menu li {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
-.navbar-left a.text-white {
-  text-decoration: none;
-}
-
-.navbar-left a.text-white:hover {
+.container-main .sidebar-position .sidebar-header {
+  height: 25vh;
+  margin-bottom: 5px;
   background-color: var(--green-light);
-  padding: 0.85rem 0.85rem;
-  border-radius: 10px 0px 10px 0px;
-  -webkit-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
 }
 
-section.bottom-square-logout {
-  height: 83vh;
-  width: 100%;
-  background: var(--second-color);
-  border-radius: 10px 30px 10px 10px;
+.container-main .sidebar-position .sidebar-middle {
+  height: calc(100vh - 25vh);
+  margin-bottom: 5px;
+  background-color: var(--green-semi);
 }
 
-.line-logout {
-  height: 1.5px;
-  width: 80%;
-  background: white;
-  margin: auto;
-  margin-top: 0.5rem;
-  margin-bottom: 2.0rem;
-}
-
-.btn-logout {
-  height: 2.5rem;
-  width: 80%;
-  background: var(--main-color);
+.container-main .sidebar-position .sidebar-footer {
+  height: 25vh;
+  margin-bottom: 5px;
+  background-color: var(--green-light);
 }
 /*# sourceMappingURL=dashboard.css.map */
