@@ -54,8 +54,67 @@ body .container .sidebar .sidebar-section-above {
 body .container .sidebar .sidebar-section-above .sidebar-item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 15% 1fr 35%;
-      grid-template-columns: 15% 1fr 35%;
+  -ms-grid-columns: 15% 1fr 25%;
+      grid-template-columns: 15% 1fr 25%;
+}
+
+body .container .sidebar .sidebar-section-above .sidebar-item .sidebar-item-humberger {
+  margin: 25% 10%;
+  cursor: pointer;
+  width: 50px;
+}
+
+body .container .sidebar .sidebar-section-above .sidebar-item .sidebar-item-humberger .line1, body .container .sidebar .sidebar-section-above .sidebar-item .sidebar-item-humberger .line2, body .container .sidebar .sidebar-section-above .sidebar-item .sidebar-item-humberger .line3 {
+  height: 0.30rem;
+  width: 1.5rem;
+  background-color: red;
+}
+
+body .container .sidebar .sidebar-section-above .sidebar-item .sidebar-item-humberger .line1, body .container .sidebar .sidebar-section-above .sidebar-item .sidebar-item-humberger .line2, body .container .sidebar .sidebar-section-above .sidebar-item .sidebar-item-humberger .line3 {
+  margin-bottom: 0.15rem;
+}
+
+body .container .sidebar .sidebar-section-above .sidebar-item .sidebar-item-humberger.active .line1 {
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+  -webkit-transform: translate(0, 10px) rotate(45deg);
+          transform: translate(0, 10px) rotate(45deg);
+}
+
+body .container .sidebar .sidebar-section-above .sidebar-item .sidebar-item-humberger.active .line2 {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateX(-55px);
+          transform: translateX(-55px);
+}
+
+body .container .sidebar .sidebar-section-above .sidebar-item .sidebar-item-humberger.active .line3 {
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+  -webkit-transform: translate(0, -5px) rotate(-45deg);
+          transform: translate(0, -5px) rotate(-45deg);
+}
+
+body .container .sidebar .sidebar-section-above .sidebar-item .sidebar-item-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .container .sidebar .sidebar-section-above .sidebar-item .sidebar-item-profile .profile-image {
+  padding: 25px;
+  background-color: red;
+}
+
+body .container .sidebar .sidebar-section-above .sidebar-item .sidebar-item-profile .profile-logout {
+  padding: 25px;
+  background-color: yellow;
 }
 
 body .container .sidebar .sidebar-section-middle {
