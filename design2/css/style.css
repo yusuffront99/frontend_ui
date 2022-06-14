@@ -1,3 +1,7 @@
+:root {
+  --white-color: #fff;
+}
+
 body {
   margin: 0%;
   padding: 0%;
@@ -20,8 +24,8 @@ body .container .navbar {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 20% 1fr 20%;
-      grid-template-rows: 20% 1fr 20%;
+  -ms-grid-rows: 15% 1fr 20%;
+      grid-template-rows: 15% 1fr 20%;
   color: #fff;
   text-align: center;
 }
@@ -31,7 +35,7 @@ body .container .navbar .navbar-section-above {
 }
 
 body .container .navbar .navbar-section-above h1.navbar-brand {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 body .container .navbar .navbar-section {
@@ -42,10 +46,26 @@ body .container .sidebar {
   background-color: #ececec;
 }
 
-body .container .sidebar .content-sidebar {
+body .container .sidebar .sidebar-section-above {
+  background-color: var(--white-color);
+  height: 15vh;
+}
+
+body .container .sidebar .sidebar-section-above .sidebar-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 1fr 35%;
+      grid-template-columns: 15% 1fr 35%;
+}
+
+body .container .sidebar .sidebar-section-middle {
   background-color: lightseagreen;
-  margin: 0.5rem;
-  height: 50vh;
+  height: 20vh;
+}
+
+body .container .sidebar .sidebar-section-bottom {
+  background-color: lightseagreen;
+  height: 20vh;
 }
 
 @media (max-width: 1024px) {

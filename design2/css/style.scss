@@ -1,3 +1,7 @@
+:root {
+    --white-color : #fff;
+}
+
 body {
     margin: 0%;
     padding: 0%;
@@ -13,20 +17,19 @@ body {
             background-color: orange;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 20% 1fr 20%;
+            grid-template-rows: 15% 1fr 20%;
             color: #fff;
             text-align: center;
 
             .navbar-section-above {
                 background-color: orangered;
                 h1.navbar-brand {
-                    font-size: 2.5rem;
+                    font-size: 2rem;
                 }
                 
             }
 
             .navbar-section {
-                
                 row-gap: 0.25rem;
             }
         }
@@ -34,10 +37,26 @@ body {
         .sidebar {
             background-color: rgb(236, 236, 236);
 
-            .content-sidebar {
+            .sidebar-section-above {
+                background-color: var(--white-color);
+                height: 15vh;
+
+                .sidebar-item {
+                    display: grid;
+                    grid-template-columns: 15% 1fr 35%;
+                }
+            }
+
+            // ==================
+            .sidebar-section-middle {
                 background-color: lightseagreen;
-                margin: 0.5rem;
-                height: 50vh;
+                height: 20vh;
+            }
+
+            // ==================
+            .sidebar-section-bottom {
+                background-color: lightseagreen;
+                height: 20vh;
             }
         }
     }
