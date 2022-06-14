@@ -1,11 +1,15 @@
 :root {
     --white-color : #fff;
+    --brand-color : #3a76ff;
+    --blue-dark: #0645a0;
 }
 
 body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
 
     //==================
     .container {
@@ -16,7 +20,7 @@ body {
 
         //====================
         .navbar {
-            background-color: orange;
+            background-color: var(--white-color);
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 15% 1fr 20%;
@@ -24,11 +28,42 @@ body {
             text-align: center;
 
             .navbar-section-above {
-                background-color: orangered;
+                background-color: var(--brand-color);
                 h1.navbar-brand {
                     font-size: 2rem;
                 }
                 
+            }
+
+            .navbar-section-middle {
+
+                .navbar-menu {
+                    height: 55vh;
+                    margin: .5rem;
+                    // overflow: scroll;
+
+                    .navbar-list-menu {
+                        list-style:none;
+                        padding: 0%;
+                        line-height: 4.5rem;
+                        
+                        li.menu-item {
+                            margin-bottom: 1.5rem;
+                            background-color: var(--blue-dark);
+                            border-radius: .5rem;
+
+                            &:hover {
+                                background-color: var(--brand-color);
+                                transition: 0.25s ease-in-out;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                color: var(--white-color);
+                            }
+                        }
+                    }
+                }
             }
 
             .navbar-section {

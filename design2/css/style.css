@@ -1,5 +1,7 @@
 :root {
   --white-color: #fff;
+  --brand-color: #3a76ff;
+  --blue-dark: #0645a0;
 }
 
 body {
@@ -7,6 +9,8 @@ body {
   padding: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 body .container {
@@ -19,7 +23,7 @@ body .container {
 }
 
 body .container .navbar {
-  background-color: orange;
+  background-color: var(--white-color);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -31,11 +35,39 @@ body .container .navbar {
 }
 
 body .container .navbar .navbar-section-above {
-  background-color: orangered;
+  background-color: var(--brand-color);
 }
 
 body .container .navbar .navbar-section-above h1.navbar-brand {
   font-size: 2rem;
+}
+
+body .container .navbar .navbar-section-middle .navbar-menu {
+  height: 55vh;
+  margin: .5rem;
+}
+
+body .container .navbar .navbar-section-middle .navbar-menu .navbar-list-menu {
+  list-style: none;
+  padding: 0%;
+  line-height: 4.5rem;
+}
+
+body .container .navbar .navbar-section-middle .navbar-menu .navbar-list-menu li.menu-item {
+  margin-bottom: 1.5rem;
+  background-color: var(--blue-dark);
+  border-radius: .5rem;
+}
+
+body .container .navbar .navbar-section-middle .navbar-menu .navbar-list-menu li.menu-item:hover {
+  background-color: var(--brand-color);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+body .container .navbar .navbar-section-middle .navbar-menu .navbar-list-menu li.menu-item a {
+  text-decoration: none;
+  color: var(--white-color);
 }
 
 body .container .navbar .navbar-section {
