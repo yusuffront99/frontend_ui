@@ -1,0 +1,66 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+    .container {
+        display: grid;
+        grid-template-columns: 20% 1fr;
+        height: 100vh;
+        width: 100%;
+
+        .navbar {
+            background-color: orange;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 20% 1fr 20%;
+            color: #fff;
+            text-align: center;
+
+            .navbar-section-above {
+                background-color: orangered;
+                h1.navbar-brand {
+                    font-size: 2.5rem;
+                }
+                
+            }
+
+            .navbar-section {
+                
+                row-gap: 0.25rem;
+            }
+        }
+
+        .sidebar {
+            background-color: rgb(236, 236, 236);
+
+            .content-sidebar {
+                background-color: lightseagreen;
+                margin: 0.5rem;
+                height: 50vh;
+            }
+        }
+    }
+}
+
+// @media
+@media (max-width: 1024px) {
+    body {
+        .container {
+            display: grid;
+            grid-template-columns: none;
+
+            .navbar {
+                display: none;
+            }
+
+            .sidebar {
+                .content-sidebar {
+                    background-color: lightseagreen;
+                    margin: 0.25rem;
+                    height: 50vh;
+                }
+            }
+        }
+    }
+}
