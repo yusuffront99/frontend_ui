@@ -6,3 +6,20 @@ menuToggle.addEventListener("click", function(){
         activeElements[activated].classList.toggle("active");
     }
 })
+
+
+// ==== BUTTON LOGOUT
+btnLogout = document.querySelector('#btn-logout');
+showButton = document.querySelector('.show-button');
+
+btnLogout.addEventListener('click', function(){
+    showButton.classList.toggle('active');
+});
+
+// onmouse click hidden hamburger
+window.addEventListener('click', function(e){
+    if(e.target != btnLogout){
+        showButton.classList.remove('active');
+        // navMenu.classList.add('hidden');
+    }
+});
